@@ -9,9 +9,9 @@ fetch("https://www.n2yo.com/rest/v1/satellite/positions/25544/41.702/-76.014/0/1
   .then(data => data.positions[0])
   .then(data => {
 
-    let x = data.satlatitude;
-    let y = data.satlongitude;
-    let z = data.sataltitude;
+    let x = data.satlatitude.toFixed(5);
+    let y = data.satlongitude.toFixed(5);
+    let z = data.sataltitude.toFixed(2);
     console.log(data);
 
     // changing dom latitude & longitude value
