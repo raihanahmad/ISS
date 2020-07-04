@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://openlayers.org/en/v4.6.5/css/ol.css"
+      type="text/css"
+    />
+    <link rel="shortcut icon" href="favicon.png" />
     <title>ISS Tracker - API Project</title>
   </head>
 
@@ -14,6 +20,7 @@
           <div id="map-section">
             <div id="map">
               <!-- Map will be shown inside this div-->
+              <p id="map-loding">Loading...</p>
             </div>
           </div>
 
@@ -22,9 +29,9 @@
               <h1>ISS Tracker</h1>
             </div>
             <div class="latlon">
-              <h3 id="alt">Altitude:</h3>
-              <h3 id="lat">Latitude:</h3>
-              <h3 id="lon">Longitude:</h3>
+              <h3 id="alt">Altitude: Loading...</h3>
+              <h3 id="lat">Latitude: Loading...</h3>
+              <h3 id="lon">Longitude: Loading...</h3>
             </div>
           </div>
         </div>

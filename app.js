@@ -18,6 +18,7 @@ fetch("https://www.n2yo.com/rest/v1/satellite/positions/25544/41.702/-76.014/0/1
     latitude.innerHTML = `Latitude: ${x}`;
     longitude.innerHTML = `Longitude: ${y}`;
     altitude.innerHTML = `Altitude: ${z} KM`;
+    document.querySelector('#map-loding').remove();
 
     // making map
     let baseMapLayer = new ol.layer.Tile({
@@ -42,7 +43,7 @@ fetch("https://www.n2yo.com/rest/v1/satellite/positions/25544/41.702/-76.014/0/1
       image: new ol.style.Icon(({
         color: 'rgba(255,255,255,0)',
         crossOrigin: '',
-        src: 'https://raw.githubusercontent.com/nasimuddin01/iss-tracker/master/iss-new.png'
+        src: 'iss-new.png'
       }))
     }));
 

@@ -33,12 +33,19 @@ body {
 }
 
 #map {
+  display: flex;
   width: 55vw;
   height: 35vw;
   border-radius: 0.5rem;
   background: var(--primary-color);
   box-shadow: 9px 9px 18px #1b2630,
     -9px -9px 18px #2d4252;
+}
+
+#map p {
+  font-size: 1.7vw;
+  margin: auto;
+  text-align: center;
 }
 
 canvas {
