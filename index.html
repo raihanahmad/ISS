@@ -10,30 +10,31 @@
   <body>
     <body>
       <section id="main-section">
-        <div id="map-section">
-          <div id="map">
-            <!-- Map will be shown inside this div-->
+        <div>
+          <div id="map-section">
+            <div id="map">
+              <!-- Map will be shown inside this div-->
+            </div>
+          </div>
+
+          <div id="map-info">
+            <div class="title">
+              <h1>ISS Tracker</h1>
+            </div>
+            <div class="latlon">
+              <h3 id="alt">Altitude</h3>
+              <h3 id="lat">Latitude</h3>
+              <h3 id="lon">Longitude</h3>
+            </div>
           </div>
         </div>
-
-        <div id="map-info">
-          <div class="brand">
-            <h1>ISS Tracker</h1>
-          </div>
-          <div class="latlon">
-            <h1 id="alt">Altitude</h1>
-            <h1 id="lat">Latitude</h1>
-            <h1 id="lon">Longitude</h1>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <p>
+        <p id="creator">
           This web app made by
-          <a href="https://raihanahmad.netlify.app/">Raihan Ahmad</a>
+          <a target="_blank" href="https://raihanahmad.netlify.app/"
+            >Raihan Ahmad</a
+          >
         </p>
-      </footer>
+      </section>
 
       <script
         src="https://openlayers.org/en/v4.6.5/build/ol.js"
