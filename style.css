@@ -1,19 +1,32 @@
+:root {
+  --primary-color: #243441;
+}
+
 * {
   margin: 0;
-  padding: 0
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: #243441;
-  color: #4271A7
+  background: var(--primary-color);
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-section {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  padding: 5vw 5vw 5vw 5vw;
 }
 
 #map {
-  margin: 0 5vw;
-  width: 90vw;
-  height: 84vh;
-  border: 2px solid red;
-  border-radius: 0.3rem
+  width: 55vw;
+  height: 35vw;
+  border-radius: 1rem;
+  background: var(--primary-color);
+  box-shadow: 9px 9px 18px #1b2630,
+    -9px -9px 18px #2d4252;
 }
 
 nav {
