@@ -15,9 +15,9 @@ fetch(
     let z = data.sataltitude;
 
     // changing dom latitude & longitude value
-    latitude.innerHTML = `Latitude: ${x}`;
-    longitude.innerHTML = `Longitude: ${y}`;
-    altitude.innerHTML = `Altitude: ${z} KM`;
+    latitude.innerHTML = `Latitude: ${x.toFixed(6)}`;
+    longitude.innerHTML = `Longitude: ${y.toFixed(6)}`;
+    altitude.innerHTML = `Altitude: ${z.toFixed(2)} KM`;
     document.querySelector("#map-loding").remove();
 
     // making map
