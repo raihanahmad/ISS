@@ -81,3 +81,63 @@ body {
 #creator a:hover {
   text-decoration: underline;
 }
+
+
+/* For smallar devices */
+@media (max-width: 1050px) {
+
+  #main-section {
+    height: 100%;
+    padding: 10vw 6vw;
+  }
+
+  #main-section>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #map-section {
+    order: 2;
+    width: 100%;
+  }
+
+  #map-info {
+    order: 1;
+    width: 100%;
+  }
+
+  .title {
+    padding: 4vw;
+    text-align: center;
+    border-radius: 10vw;
+    margin-bottom: 10vw;
+    font-size: 5vw;
+  }
+
+  .latlon h3 {
+    border-radius: 10rem;
+    font-size: 5vw;
+    padding: 3vw 6vw;
+    margin-bottom: 4vw;
+  }
+
+  .latlon h3:last-child {
+    margin-bottom: 8vw;
+  }
+
+  #map {
+    width: 100%;
+    height: 65vw;
+    border-radius: 1rem;
+    background: var(--primary-color);
+    box-shadow: 9px 9px 18px #1b2630,
+      -9px -9px 18px #2d4252;
+  }
+
+  #creator {
+    margin-top: 6vw;
+    font-size: 3vw;
+  }
+}
